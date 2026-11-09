@@ -2918,15 +2918,25 @@ var src_default = {
   async fetch(request, env) {
     const url = new URL(request.url);
     const host = url.origin;
-    const frontendUrl = 'https://raw.githubusercontent.com/bulianglin/psub/main/frontend.html';
+    const frontendUrls = [
+      'https://raw.githubusercontent.com/bohu-t/psub/main/frontend.html',
+      'http://8.148.20.156/rules/frontend.html',
+      'https://raw.githubusercontent.com/bulianglin/psub/main/frontend.html'
+    ];
     const SUB_BUCKET = env.SUB_BUCKET;
     let backend = env.BACKEND.replace(/(https?:\/\/[^/]+).*$/, "$1");
     const subDir = "subscription";
     const pathSegments = url.pathname.split("/").filter((segment) => segment.length > 0);
     if (pathSegments.length === 0) {
-      const response = await fetch(frontendUrl);
-      if (response.status !== 200) {
-        return new Response('Failed to fetch frontend', { status: response.status });
+      let response = null;
+      for (const u of frontendUrls) {
+        try {
+          const r = await fetch(u, { cf: { cacheTtl: 600 } });
+          if (r.status === 200) { response = r; break; }
+        } catch (e) { /* 换下一个源 */ }
+      }
+      if (!response) {
+        return new Response('Failed to fetch frontend', { status: 502 });
       }
       const originalHtml = await response.text();
       const modifiedHtml = originalHtml.replace(/https:\/\/bulianglin2023\.dev/, host);
