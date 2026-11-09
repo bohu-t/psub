@@ -210,6 +210,7 @@ def render_subconverter_ini(path):
 
 
 def render_sr_conf(final_path, mode, reject, direct, proxy, sp_direct, sp_proxy, lite=False):
+    os.makedirs(os.path.dirname(final_path), exist_ok=True)
     """黑名单模式：默认直连，只需 拦截+代理 清单（直连由 FINAL 兼底）
        白名单模式：默认代理，只需 拦截+直连 清单（代理由 FINAL 兼底）
        省掉与默认行为相同的几万条冗余规则，体积减半以上"""
