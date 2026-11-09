@@ -1,0 +1,17 @@
+# 机密与运行时
+.clash_secret
+.proxy_auth
+state.json
+*.orig
+*.current
+*.merged
+zJ.yaml.new
+sub_new.yaml
+.build.lock
+
+# 缓存与日志
+cache/
+logs/
+auto/observer.log
+__pycache__/
+*.pyc

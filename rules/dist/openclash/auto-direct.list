@@ -1,0 +1,12 @@
+# 流量观察器自动纠偏：误走代理的国内域名
+# 构建时间: 2026-11-09 23:17 | 条目数: 10
++.0.openwrt.pool.ntp.org
++.beacons5.gvt3.com
++.device-config.pcms.apple.com
++.frp.cnht3.xyz
++.pool.ntp.org
++.ts1.tc.mm.bing.net
++.ts2.tc.mm.bing.net
++.ts3.tc.mm.bing.net
++.ts4.tc.mm.bing.net
++.www.bing.com

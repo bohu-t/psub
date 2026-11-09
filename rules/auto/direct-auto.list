@@ -1,0 +1,13 @@
+# 流量观察器：误走代理的国内域名（自动加直连）
+# 由 observe.py 根据真实流量自动维护，勿手工编辑；
+# 想强制覆盖请放 custom/（优先级更高）
+0.openwrt.pool.ntp.org
+beacons5.gvt3.com
+device-config.pcms.apple.com
+frp.cnht3.xyz
+pool.ntp.org
+ts1.tc.mm.bing.net
+ts2.tc.mm.bing.net
+ts3.tc.mm.bing.net
+ts4.tc.mm.bing.net
+www.bing.com

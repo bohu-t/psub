@@ -1,0 +1,14 @@
+# 手工维护：强制直连域名（优先级最高）
+# 种子来源：h2y manual_direct.txt（已停更，冻结继承）
+api.cloudmobi.net
+blackwell-synergy.com
+cabdirect.org
+hotmail.com
+icloud-content.com
+ieee.org
+jstor.org
+nature.com
+osapublishing.org
+researchgate.net
+sciencemag.org
+springer.com
