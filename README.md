@@ -9,14 +9,6 @@
 - **前端自托管**：优先加载本仓库的 `frontend.html`，失败回退自建发布源，最后回退上游仓库
 - **自带分流规则**：仓库 `rules/` 目录是自维护规则生产线，直接提供订阅转换模板
 
-### 演示网站
-
-https://psub.888005.xyz
-
-### 视频教程
-
-https://youtu.be/X7CC5jrgazo
-
 ## 部署
 
 环境变量：
@@ -63,7 +55,7 @@ https://youtu.be/X7CC5jrgazo
 
 线上发布源（国内直连，GitHub raw 国内不可达）：`http://8.148.20.156/rules/`
 
-### 支持反代转换的协议
+## 支持反代转换的协议
 
 - shadowsocks
 - shadowsocksR
@@ -71,9 +63,3 @@ https://youtu.be/X7CC5jrgazo
 - trojan
 - vless(取决于后端)
 - hysteria(取决于后端)
-
-### 打赏
-
-请我喝矿泉水：[全专线中专机场AFF链接](http://b.880805.xyz/)
-
-请我喝桶装水：[搬瓦工美国CN2 GIA线路AFF链接](https://bwg.880805.xyz/)
