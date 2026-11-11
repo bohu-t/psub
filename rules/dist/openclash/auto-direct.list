@@ -1,5 +1,5 @@
 # 流量观察器自动纠偏：误走代理的国内域名
-# 构建时间: 2026-11-10 03:33 | 条目数: 10
+# 构建时间: 2026-11-11 01:14 | 条目数: 10
 +.0.openwrt.pool.ntp.org
 +.beacons5.gvt3.com
 +.device-config.pcms.apple.com
