@@ -1,5 +1,5 @@
 # 手工特殊代理规则(IP段/关键字)
-# 构建时间: 2026-11-19 02:33 | 条目数: 19
+# 构建时间: 2026-11-20 02:18 | 条目数: 19
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,google
 DOMAIN-KEYWORD,phobos
